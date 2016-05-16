@@ -19,24 +19,19 @@
       var height = $( window ).height();
       var width = $( window ).width();
       var size = width + ',' + height;
-			var url = 'https://public.tableau.com/views/GlobalWarming2016/viz';
-			var param = 'YearMonth';
-			var locations = [];
-			var yearMonth=184901;
-			var i;
 
-			for (i=0, i <= 166, i++;) {
+			locations = [
 
-					yearMonth= yearMonth+100; //increment yearMonth
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185001"}, 
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185002"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185003"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185004"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185005"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185006"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185007"},
+				{"src": "https://public.tableau.com/views/GlobalWarming2016/viz?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth=185008"},
 
-					var m;
-					for (m=0, m<=12, m++) {
-							yearMonth++;
-							locations.push("{src:"+url+"?:showVizHome=no&:embed=yes&:toolbar=no&:format=png&YearMonth="+yearMonth+"&:size="+size+"},");
-							console.log(locations);
-					}
-
-			}
+			];
 
       $("#myGallery").attr('width',width);
       $("#myGallery").attr('height',height);
